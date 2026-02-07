@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>No - Ask Her Out</title>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        .no-btn-large {
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Are You Sure? 😢</h1>
+        <p>Please reconsider...</p>
+        <div class="tenor-gif-embed" data-postid="7344131" data-share-method="host" data-aspect-ratio="1" data-width="100%">
+            <a href="https://tenor.com/view/sad-face-gif-7344131">Sad Face GIF</a>
+        </div>
+        <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+        <div class="btn" style="margin-top: 30px;">
+            <a href="yes.html" class="yes-btn">Yes, Let's Go!</a>
+            <button class="no-btn no-btn-large" id="noBtn">No</button>
+        </div>
+        <a href="index.html" style="display: inline-block; margin-top: 20px; padding: 10px 20px; background-color: #667eea; color: white; text-decoration: none; border-radius: 5px;">Go Back</a>
+    </div>
+
+    <script>
+        const noBtn = document.getElementById('noBtn');
+        noBtn.addEventListener('mouseover', () => {
+            const randomX = Math.random() * (window.innerWidth - 100);
+            const randomY = Math.random() * (window.innerHeight - 50);
+            noBtn.style.position = 'fixed';
+            noBtn.style.left = randomX + 'px';
+            noBtn.style.top = randomY + 'px';
+        });
+    </script>
+</body>
+</html>
