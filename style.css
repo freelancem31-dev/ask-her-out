@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    background: white;
+    border-radius: 20px;
+    padding: 40px;
+    text-align: center;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    width: 100%;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 2.5em;
+}
+
+p {
+    color: #666;
+    margin-bottom: 30px;
+    font-size: 1.1em;
+}
+
+tenor-gif-embed {
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.btn a {
+    padding: 12px 30px;
+    font-size: 1.1em;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+    min-width: 120px;
+}
+
+.yes-btn {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.yes-btn:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+.no-btn {
+    background-color: #f44336;
+    color: white;
+}
+
+.no-btn:hover {
+    background-color: #da190b;
+    transform: scale(1.05);
+}
